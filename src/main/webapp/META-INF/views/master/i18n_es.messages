@@ -70,6 +70,10 @@ master.menu.authenticated.investor-records.list = Lista de Registros de Inversor
 master.menu.authenticated.offer.list= Lista de Ofertas
 # master.menu.administrator ###################################################
 
+# master.menu.authenticated ###################################################
+master.menu.employer= Empleado
+master.menu.employer.job.list= Listar mis trabajos
+
 master.menu.administrator = Administrador
 master.menu.administrator.challenge.list = Administrar Desafíos
 master.menu.administrator.challenge.create = Crear un Desafío
