@@ -18,13 +18,13 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>747</x>
-      <y>225</y>
-      <w>90</w>
-      <h>99</h>
+      <x>675</x>
+      <y>171</y>
+      <w>63</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>80.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>50.0;30.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -74,13 +74,13 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>801</x>
-      <y>225</y>
-      <w>117</w>
-      <h>99</h>
+      <x>675</x>
+      <y>216</y>
+      <w>63</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;90.0</additional_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -179,8 +179,8 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>657</x>
-      <y>306</y>
+      <x>504</x>
+      <y>117</y>
       <w>180</w>
       <h>72</h>
     </coordinates>
@@ -194,8 +194,8 @@ Provider
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>846</x>
-      <y>306</y>
+      <x>504</x>
+      <y>198</y>
       <w>180</w>
       <h>72</h>
     </coordinates>
@@ -299,8 +299,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>657</x>
-      <y>405</y>
+      <x>963</x>
+      <y>675</y>
       <w>288</w>
       <h>81</h>
     </coordinates>
@@ -363,8 +363,8 @@ BlascoBulletin
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>657</x>
-      <y>504</y>
+      <x>963</x>
+      <y>585</y>
       <w>297</w>
       <h>81</h>
     </coordinates>
@@ -590,5 +590,65 @@ CustomisationParameter
 + spamWordList: String {NotBlank}
 + spamThreshold: Double {NotNull, Range(0,100)}</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>729</x>
+      <y>270</y>
+      <w>171</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Employer
+--
++ company: String {NotBlank}
++ sector: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>801</x>
+      <y>225</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>684</x>
+      <y>432</y>
+      <w>369</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Job
+--
++ reference: String {Unique, NotBlank, Length(min=5, max=10)}
++ title: String {NotBlank}
++ deadline: Date {Temporal(TIMESTAMP), Future, NotNull}
++ salary: Money {NotNull, Valid}
++ description: String {NotBlank}
++ moreInfo: String {URL}
++ finalMode: boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>801</x>
+      <y>333</y>
+      <w>117</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-x
+Registered by ^
+m2=0..*
+m1=1
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
   </element>
 </diagram>
