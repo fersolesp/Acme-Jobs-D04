@@ -102,6 +102,10 @@ master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
 master.menu.consumer.offer.create = Create an Offer
 
+# master.menu.employer ########################################################
+master.menu.employer= Employer
+master.menu.employer.job.list= List my Jobs
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
