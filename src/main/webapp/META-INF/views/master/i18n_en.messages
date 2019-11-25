@@ -60,7 +60,13 @@ master.menu.anonymous.announcement.list= List Announcements
 master.menu.anonymous.investor-records.list = List Investor Records
 master.menu.anonymous.top-investor-records.list = List Top Investor Records
 
+# master.menu.employer ################################################
+
+master.menu.employer = Employer
+master.menu.employer.job.list = List Jobs
+
 # master.menu.authenticated ###################################################
+
 master.menu.authenticated= Authenticated
 master.menu.authenticated.announcement.list= List Announcements
 master.menu.authenticated.companyRecord.list = List Company Records

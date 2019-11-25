@@ -59,6 +59,10 @@ master.menu.anonymous.announcement.list= Listas Anuncios
 master.menu.anonymous.investor-records.list = Lista de Registros de Inversores
 master.menu.anonymous.top-investor-records.list = Lista de los mejores Registros de Inversores
 
+# master.menu.employer ################################################
+
+master.menu.employer = Empleado
+master.menu.employer.job.list = Lista de Trabajos
 
 # master.menu.authenticated ###################################################
 master.menu.authenticated= Autenticado
