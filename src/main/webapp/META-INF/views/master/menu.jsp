@@ -71,6 +71,8 @@
 			<acme:menu-suboption code="master.menu.authenticated.offer.list" action="/authenticated/offer/list"/>
       					<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.companyRecord.list" action="/authenticated/company-record/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.job.list" action="/authenticated/job/list"/>
 		</acme:menu-option>
 
     

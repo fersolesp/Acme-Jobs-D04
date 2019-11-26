@@ -36,6 +36,9 @@ public class Job extends DomainEntity {
 	@Length(min = 5, max = 10)
 	private String				reference;
 
+	@NotNull
+	private Status				status;
+
 	@NotBlank
 	private String				title;
 
@@ -47,13 +50,8 @@ public class Job extends DomainEntity {
 	@Valid
 	private Money				salary;
 
-	@NotBlank
-	private String				description;
-
 	@URL
 	private String				moreInfo;
-
-	private boolean				finalMode;
 
 	//Relationships---------------------------
 

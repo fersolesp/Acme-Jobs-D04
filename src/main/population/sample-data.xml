@@ -456,9 +456,8 @@
     	<property name="title" value="Title 1"/>
     	<property name="deadline" value="2030/12/11 23:59"/>
     	<property name="salary" value="€ 15,000.98"/>
-    	<property name="description" value="Lorem ipsum sit dolor amet"/>
+    	<property name="status" value="PUBLISHED"/>
     	<property name="moreInfo" value="http://www.example.com"/>
-    	<property name="finalMode" value="true"/>
     	<property name="employer" ref="employer1Employer"/>
     </bean>
     
@@ -467,9 +466,8 @@
     	<property name="title" value="Title 2"/>
     	<property name="deadline" value="2031/12/11 23:59"/>
     	<property name="salary" value="$ 15,000.98"/>
-    	<property name="description" value="	Developement of an application"/>
+    	<property name="status" value="PUBLISHED"/>
     	<property name="moreInfo" value="http://www.example2.com"/>
-    	<property name="finalMode" value="true"/>
     	<property name="employer" ref="employer1Employer"/>
     </bean>
     
@@ -478,20 +476,18 @@
     	<property name="title" value="Title 3"/>
     	<property name="deadline" value="2033/12/11 23:59"/>
     	<property name="salary" value="€ 18,000.98"/>
-    	<property name="description" value="Make a DataBase"/>
+    	<property name="status" value="DRAFT"/>
     	<property name="moreInfo" value="http://www.example3.com"/>
-    	<property name="finalMode" value="true"/>
     	<property name="employer" ref="employer2Employer"/>
     </bean>
     
     <bean name="job4" class="acme.entities.jobs.Job">
     	<property name="reference" value="EMP2-JOB2"/>
     	<property name="title" value="Title 4"/>
-    	<property name="deadline" value="2034/12/11 23:59"/>
+    	<property name="deadline" value="2018/12/11 23:59"/>
     	<property name="salary" value="$ 11,000.98"/>
-    	<property name="description" value="Make a Web Page"/>
+    	<property name="status" value="PUBLISHED"/>
     	<property name="moreInfo" value="http://www.example4.com"/>
-    	<property name="finalMode" value="true"/>
     	<property name="employer" ref="employer2Employer"/>
     </bean>
     
@@ -500,9 +496,7 @@
     	<property name="title" value="Title 5"/>
     	<property name="deadline" value="2035/12/11 23:59"/>
     	<property name="salary" value="€ 20,000.98"/>
-    	<property name="description" value="Make a full Information System"/>
-    	<property name="moreInfo" value="http://www.example5.com"/>
-    	<property name="finalMode" value="true"/>
+    	<property name="status" value="DRAFT"/>
     	<property name="employer" ref="employer1Employer"/>
     </bean>
   

@@ -68,6 +68,7 @@ master.menu.authenticated.announcement.list= Lista de Anuncios
 master.menu.authenticated.challenge.list= Lista de Desafíos
 master.menu.authenticated.investor-records.list = Lista de Registros de Inversores
 master.menu.authenticated.offer.list= Lista de Ofertas
+master.menu.authenticated.job.list= Lista de Empleos
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

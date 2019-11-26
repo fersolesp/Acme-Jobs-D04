@@ -629,12 +629,12 @@ Employer
 Job
 --
 + reference: String {Unique, NotBlank, Length(min=5,max=10)}
++ status: Status {NotNull}
 + title: String {NotBlank}
 + deadline: Date {NotNull,Temporal(TIMESTAMP)}
 + salary: Money {NotNull,Valid}
-+ description: String {NotBlank}
 + moreInfo: String {URL}
-+ finalMode: boolean</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
