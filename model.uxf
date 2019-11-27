@@ -31,8 +31,8 @@ bg=yellow</panel_attributes>
     <coordinates>
       <x>693</x>
       <y>108</y>
-      <w>171</w>
-      <h>90</h>
+      <w>207</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Datatype&gt;&gt;
 UserIdentity
@@ -86,7 +86,7 @@ bg=blue</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1368</x>
-      <y>198</y>
+      <y>153</y>
       <w>72</w>
       <h>45</h>
     </coordinates>
@@ -101,7 +101,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1368</x>
-      <y>135</y>
+      <y>90</y>
       <w>72</w>
       <h>45</h>
     </coordinates>
@@ -116,7 +116,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1368</x>
-      <y>252</y>
+      <y>207</y>
       <w>72</w>
       <h>45</h>
     </coordinates>
@@ -131,40 +131,40 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1269</x>
-      <y>162</y>
-      <w>126</w>
-      <h>72</h>
+      <y>117</y>
+      <w>117</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;60.0;120.0;10.0</additional_attributes>
+    <additional_attributes>10.0;110.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1269</x>
+      <y>171</y>
+      <w>117</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;110.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>1269</x>
       <y>207</y>
-      <w>126</w>
-      <h>27</h>
+      <w>117</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1269</x>
-      <y>207</y>
-      <w>126</w>
-      <h>81</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;70.0</additional_attributes>
+    <additional_attributes>10.0;10.0;110.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>693</x>
-      <y>216</y>
+      <y>225</y>
       <w>171</w>
       <h>54</h>
     </coordinates>
@@ -315,8 +315,8 @@ PradasBulletin
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1359</x>
-      <y>405</y>
+      <x>1368</x>
+      <y>891</y>
       <w>297</w>
       <h>81</h>
     </coordinates>
@@ -513,8 +513,8 @@ Offers
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>783</x>
-      <y>828</y>
+      <x>1449</x>
+      <y>477</y>
       <w>216</w>
       <h>99</h>
     </coordinates>
@@ -529,34 +529,34 @@ Banner
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1071</x>
-      <y>936</y>
+      <x>1521</x>
+      <y>648</y>
       <w>297</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 CommercialBanner
 --
-+ creditCard: String{NotBlank, CreditCardNumber}</panel_attributes>
++ creditCard: String {NotBlank, CreditCardNumber}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>945</x>
-      <y>918</y>
-      <w>144</w>
-      <h>81</h>
+      <x>1557</x>
+      <y>567</y>
+      <w>54</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;140.0;70.0</additional_attributes>
+    <additional_attributes>10.0;10.0;40.0;90.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>756</x>
-      <y>972</y>
-      <w>216</w>
+      <x>1341</x>
+      <y>648</y>
+      <w>171</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
@@ -568,13 +568,13 @@ NonCommercialBanner
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
-      <y>918</y>
-      <w>63</w>
-      <h>72</h>
+      <x>1431</x>
+      <y>567</y>
+      <w>99</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>50.0;10.0;10.0;60.0</additional_attributes>
+    <additional_attributes>90.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -661,5 +661,45 @@ m1=1
 m2=0..*
 Registered by ^</panel_attributes>
     <additional_attributes>80.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1269</x>
+      <y>216</y>
+      <w>207</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1422</x>
+      <y>306</y>
+      <w>243</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Sponsor
+--
++ organisationName: String {NotBlank}
++ creditCard: String {CreditCardNumber}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1521</x>
+      <y>369</y>
+      <w>99</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-x
+m1=1
+m2=0..*
+Created by ^</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
 </diagram>

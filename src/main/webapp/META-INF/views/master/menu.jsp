@@ -121,6 +121,10 @@
 		<acme:menu-option code="master.menu.employer" access="hasRole('Employer')">
 			<acme:menu-suboption code="master.menu.employer.job.list" action="/employer/job/list-mine"/>
 		</acme:menu-option>
+		<acme:menu-option code="master.menu.sponsor" access="hasRole('Sponsor')">
+			<acme:menu-suboption code="master.menu.sponsor.commercial-banner.list" action="/sponsor/commercial-banner/list-mine"/>
+			<acme:menu-suboption code="master.menu.sponsor.non-commercial-banner.list" action="/sponsor/non-commercial-banner/list-mine"/>
+		</acme:menu-option>
 	</acme:menu-left>
 
 	<acme:menu-right>
