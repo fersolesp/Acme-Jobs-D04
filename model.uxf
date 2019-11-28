@@ -719,7 +719,7 @@ AuditRecord
     </coordinates>
     <panel_attributes>lt=&lt;-x
 m1=1
-m2=0..1
+m2=0..*
 Has ^</panel_attributes>
     <additional_attributes>160.0;40.0;10.0;10.0</additional_attributes>
   </element>

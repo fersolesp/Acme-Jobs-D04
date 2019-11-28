@@ -22,7 +22,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class auditRecord extends DomainEntity {
+public class AuditRecord extends DomainEntity {
 
 	// Serialisation identifier -----------------------------------------------
 

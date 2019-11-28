@@ -499,5 +499,111 @@
     	<property name="status" value="DRAFT"/>
     	<property name="employer" ref="employer1Employer"/>
     </bean>
+    
+    <!-- Auditors -->
+    
+    <bean name="auditor1UserAccount" class="acme.framework.entities.UserAccount">
+    	<property name="username" value="auditor1"/>
+    	<property name="password" value="auditor1"/>
+    	<property name="enabled" value="true"/>
+    	<property name="identity">
+    		<bean class="acme.datatypes.UserIdentity">
+    			<property name="name" value="Auditor"/>
+    			<property name="surname" value="First"/>
+    			<property name="email" value="auditor1@acme.com"/>
+    		</bean>
+    	</property>
+    	<property name="roles">
+    		<list>
+    			<ref bean="auditor1Auditor"/>
+    			<ref bean="auditor1Authenticated"/>
+    		</list>
+    	</property>
+    </bean>
+    <bean name="auditor2UserAccount" class="acme.framework.entities.UserAccount">
+    	<property name="username" value="auditor2"/>
+    	<property name="password" value="auditor2"/>
+    	<property name="enabled" value="true"/>
+    	<property name="identity">
+    		<bean class="acme.datatypes.UserIdentity">
+    			<property name="name" value="Auditor"/>
+    			<property name="surname" value="Second"/>
+    			<property name="email" value="auditor2@acme.com"/>
+    		</bean>
+    	</property>
+    	<property name="roles">
+    		<list>
+    			<ref bean="auditor2Auditor"/>
+    			<ref bean="auditor2Authenticated"/>
+    		</list>
+    	</property>
+    </bean>
+    
+    
+    
+    <bean name="auditor1Auditor" class="acme.entities.roles.Auditor">
+    	<property name="firm" value="firm 1"/>
+    	<property name="responsabilityStatement" value="responsabilityStatement 1"/>
+       	<property name="userAccount" ref="auditor1UserAccount"/>
+    </bean>
+    <bean name="auditor1Authenticated" class="acme.framework.entities.Authenticated">
+    	<property name="userAccount" ref="auditor1UserAccount"/>
+    </bean>
+    
+    <bean name="auditor2Auditor" class="acme.entities.roles.Auditor">
+    	<property name="firm" value="firm 2"/>
+    	<property name="responsabilityStatement" value="responsabilityStatement 2"/>
+       	<property name="userAccount" ref="auditor2UserAccount"/>
+    </bean>
+    <bean name="auditor2Authenticated" class="acme.framework.entities.Authenticated">
+    	<property name="userAccount" ref="auditor2UserAccount"/>
+    </bean>
+    
+    <!-- Audit Records -->
+    
+    <bean name="auditRecord1" class="acme.entities.auditRecords.AuditRecord">
+    	<property name="title" value="Audit Record 1"/>
+    	<property name="moment" value="2018/12/11 23:59"/>
+    	<property name="status" value="PUBLISHED"/>
+    	<property name="body" value="An extense block of text describing the audit record 1"/>
+    	<property name="job" ref="job1"/>
+    	<property name="auditor" ref="auditor1Auditor"/>
+    </bean>
+    
+    <bean name="auditRecord2" class="acme.entities.auditRecords.AuditRecord">
+    	<property name="title" value="Audit Record 2"/>
+    	<property name="moment" value="2018/12/18 23:59"/>
+    	<property name="status" value="PUBLISHED"/>
+    	<property name="body" value="An extense block of text describing the audit record 2"/>
+    	<property name="job" ref="job2"/>
+    	<property name="auditor" ref="auditor1Auditor"/>
+    </bean>
+    
+     <bean name="auditRecord3" class="acme.entities.auditRecords.AuditRecord">
+    	<property name="title" value="Audit Record 3"/>
+    	<property name="moment" value="2018/12/22 23:59"/>
+    	<property name="status" value="PUBLISHED"/>
+    	<property name="body" value="An extense block of text describing the audit record 3"/>
+    	<property name="job" ref="job3"/>
+    	<property name="auditor" ref="auditor1Auditor"/>
+    </bean>
+    
+    <bean name="auditRecord4" class="acme.entities.auditRecords.AuditRecord">
+    	<property name="title" value="Audit Record 4"/>
+    	<property name="moment" value="2018/12/27 23:59"/>
+    	<property name="status" value="PUBLISHED"/>
+    	<property name="body" value="An extense block of text describing the audit record 4"/>
+    	<property name="job" ref="job4"/>
+    	<property name="auditor" ref="auditor2Auditor"/>
+    </bean>
+    
+    <bean name="auditRecord5" class="acme.entities.auditRecords.AuditRecord">
+    	<property name="title" value="Audit Record 5"/>
+    	<property name="moment" value="2018/12/30 23:59"/>
+    	<property name="status" value="PUBLISHED"/>
+    	<property name="body" value="An extense block of text describing the audit record 5"/>
+    	<property name="job" ref="job5"/>
+    	<property name="auditor" ref="auditor2Auditor"/>
+    </bean>
   
 </beans>
