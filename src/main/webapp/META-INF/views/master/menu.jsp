@@ -62,7 +62,7 @@
 			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
 			      <acme:menu-separator/>
 
-      <acme:menu-suboption code="master.menu.authenticated.request.list" action="/authenticated/request/list"/>
+      		<acme:menu-suboption code="master.menu.authenticated.request.list" action="/authenticated/request/list"/>
 						<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.challenge.list" action="/authenticated/challenge/list"/>
 						<acme:menu-separator/>
@@ -73,6 +73,8 @@
 			<acme:menu-suboption code="master.menu.authenticated.companyRecord.list" action="/authenticated/company-record/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.job.list" action="/authenticated/job/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.messageThread.list" action="/authenticated/message-thread/list"/>
 		</acme:menu-option>
 
     

@@ -1,22 +1,22 @@
 
-package acme.features.authenticated.message;
+package acme.features.authenticated.authenticated;
 
 import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.messages.Message;
+import acme.framework.entities.Authenticated;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface AuthenticatedMessageRepository extends AbstractRepository {
+public interface AuthenticatedRepository extends AbstractRepository {
 
-	@Query("select m from Message m where m.id=?1")
-	Message findOneMessageById(int id);
+	@Query("select m.authenticated from Message m where m.messageThread.id=?1")
+	Collection<Authenticated> findManyAuthenticatedByThreadId(Integer messageThreadId);
 
-	@Query("select m from Message m where m.messageThread.id=?1")
-	Collection<Message> findManyMessagesByThreadId(Integer messageThreadId);
+	@Query("select a from Authenticated a where a.id=?1")
+	Authenticated findOneAuthenticatedById(int id);
 
 	@Query("select count(m) from Message m where m.messageThread.id=(select m.messageThread.id from Message m where m.id=?1) and m.authenticated.id=?2")
 	Integer findNumberOfMessagesOfUserInThreadByMessageGiven(int messageId, int authenticatedId);

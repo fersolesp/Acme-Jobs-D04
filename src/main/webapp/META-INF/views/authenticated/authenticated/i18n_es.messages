@@ -1,0 +1,8 @@
+authenticated.authenticated.list.label.username = Nombre de usuario
+
+authenticated.authenticated.form.label.username = Nombre de usuario:
+authenticated.authenticated.form.label.name = Nombre:
+authenticated.authenticated.form.label.surname = Apellidos:
+
+authenticated.authenticated.form.button.return = Volver
+

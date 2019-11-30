@@ -5,9 +5,18 @@
 
 <acme:form readonly="true">
 	<acme:form-moment code="authenticated.messageThread.form.label.moment" path="moment"/>
-	<acme:form-textbox code="authenticated.messageThread.list.label.title" path="title"/>
-	<acme:form-integer code="authenticated.messageThread.list.label.thread.id" path="id" />
-		
+	<acme:form-textbox code="authenticated.messageThread.form.label.title" path="title"/>
+				
+	<button type="button" onclick="javascript: clearReturnUrl(); redirect('/authenticated/message/list?id=${id}')"
+			class="btn btn-default">
+			<acme:message code="authenticated.messageThread.form.button.messages"/>
+	</button>
+	
+	<button type="button" onclick="javascript: clearReturnUrl(); redirect('/authenticated/authenticated/list?id=${id}')"
+			class="btn btn-default">
+			<acme:message code="authenticated.messageThread.form.button.participants"/>
+	</button>
+	
 	<acme:form-return code="authenticated.messageThread.form.button.return"/>
 </acme:form>
 

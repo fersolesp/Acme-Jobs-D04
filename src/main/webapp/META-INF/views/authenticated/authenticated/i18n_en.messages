@@ -1,0 +1,8 @@
+authenticated.authenticated.list.label.username = User Name
+
+authenticated.authenticated.form.label.username = User Name:
+authenticated.authenticated.form.label.name = Name:
+authenticated.authenticated.form.label.surname = Surname:
+
+authenticated.authenticated.form.button.return = Return
+

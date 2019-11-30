@@ -69,6 +69,8 @@ master.menu.authenticated.challenge.list= Lista de Desafíos
 master.menu.authenticated.investor-records.list = Lista de Registros de Inversores
 master.menu.authenticated.offer.list= Lista de Ofertas
 master.menu.authenticated.job.list= Lista de Empleos
+master.menu.authenticated.messageThread.list = Lista de Hilos de Mensajes
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

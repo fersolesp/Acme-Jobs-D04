@@ -1,12 +1,11 @@
 
-package acme.features.authenticated.message;
+package acme.features.authenticated.authenticated;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.messages.Message;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
@@ -14,14 +13,14 @@ import acme.framework.entities.Principal;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedMessageListService implements AbstractListService<Authenticated, Message> {
+public class AuthenticatedListService implements AbstractListService<Authenticated, Authenticated> {
 
 	@Autowired
-	AuthenticatedMessageRepository repository;
+	AuthenticatedRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Message> request) {
+	public boolean authorise(final Request<Authenticated> request) {
 
 		assert request != null;
 		boolean result;
@@ -37,23 +36,23 @@ public class AuthenticatedMessageListService implements AbstractListService<Auth
 	}
 
 	@Override
-	public void unbind(final Request<Message> request, final Message entity, final Model model) {
+	public void unbind(final Request<Authenticated> request, final Authenticated entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "authenticated.userAccount.username");
+		request.unbind(entity, model, "userAccount.username");
 	}
 
 	@Override
-	public Collection<Message> findMany(final Request<Message> request) {
+	public Collection<Authenticated> findMany(final Request<Authenticated> request) {
 		assert request != null;
 
-		Collection<Message> result;
+		Collection<Authenticated> result;
 		Model model;
 
 		model = request.getModel();
-		result = this.repository.findManyMessagesByThreadId(model.getInteger("id"));
+		result = this.repository.findManyAuthenticatedByThreadId(model.getInteger("id"));
 
 		return result;
 	}

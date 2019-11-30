@@ -1,8 +1,12 @@
-authenticated.messageThread.list.label.title = Title
-authenticated.messageThread.list.label.moment = Moment
+authenticated.message.list.label.title = Title
+authenticated.message.list.label.moment = Moment
+authenticated.message.list.label.author = Author
 
-authenticated.messageThread.form.label.moment = Moment:
-authenticated.messageThread.form.label.title = Title:
+authenticated.message.form.label.moment = Moment:
+authenticated.message.form.label.title = Title:
+authenticated.message.form.label.tags = Tags:
+authenticated.message.form.label.body = Body:
+authenticated.message.form.label.author = Author:
 
-authenticated.messageThread.form.button.return = Return
+authenticated.message.form.button.return = Return
 

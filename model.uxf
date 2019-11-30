@@ -30,9 +30,9 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>693</x>
-      <y>234</y>
+      <y>225</y>
       <w>171</w>
-      <h>90</h>
+      <h>108</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Datatype&gt;&gt;
 UserIdentity
@@ -65,11 +65,11 @@ bg=blue</panel_attributes>
       <x>765</x>
       <y>198</y>
       <w>27</w>
-      <h>54</h>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=..
 </panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>

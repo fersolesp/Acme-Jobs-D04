@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.message;
+package acme.features.authenticated.authenticated;
 
 import javax.annotation.PostConstruct;
 
@@ -7,20 +7,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.messages.Message;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/authenticated/message")
-public class AuthenticatedMessageController extends AbstractController<Authenticated, Message> {
+@RequestMapping("/authenticated/authenticated")
+public class AuthenticatedController extends AbstractController<Authenticated, Authenticated> {
 
 	@Autowired
-	AuthenticatedMessageListService	listService;
+	AuthenticatedListService	listService;
 
 	@Autowired
-	AuthenticatedMessageShowService	showService;
+	AuthenticatedShowService	showService;
 
 
 	@PostConstruct

@@ -520,14 +520,13 @@
     	<property name="tags" value=""/>
     	<property name="body" value="Message 1's body!"/>
     	<property name="messageThread" ref="messageThread1"/>
-    	<property name="authenticated" ref="employer1Authenticated"/>
-    	
+    	<property name="authenticated" ref="employer1Authenticated"/>    	
     </bean>
-    
+
     <bean name="message2" class="acme.entities.messages.Message">
     	<property name="title" value="Message 2"/>
     	<property name="moment" value="2019/05/20 12:00"/>
-    	<property name="tags" value=""/>
+    	<property name="tags" value="message, thread, trendy"/>
     	<property name="body" value="Message 2's body!"/>
     	<property name="messageThread" ref="messageThread2"/>
     	<property name="authenticated" ref="employer2Authenticated"/>
@@ -539,6 +538,15 @@
     	<property name="tags" value=""/>
     	<property name="body" value="Message 3's body!"/>
     	<property name="messageThread" ref="messageThread2"/>
+    	<property name="authenticated" ref="employer1Authenticated"/>
+    </bean>
+          
+    <bean name="message4" class="acme.entities.messages.Message">
+    	<property name="title" value="Message 4"/>
+    	<property name="moment" value="2019/04/20 12:00"/>
+    	<property name="tags" value="social, trendy"/>
+    	<property name="body" value="Message 4's body!"/>
+    	<property name="messageThread" ref="messageThread1"/>
     	<property name="authenticated" ref="employer1Authenticated"/>
     </bean>
     
