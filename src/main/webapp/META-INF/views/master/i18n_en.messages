@@ -107,6 +107,11 @@ master.menu.consumer.offer.create = Create an Offer
 master.menu.employer= Employer
 master.menu.employer.job.list= List my Jobs
 
+# master.menu.auditor ########################################################
+master.menu.auditor= Auditor
+master.menu.auditor.job.list= List Jobs which i written a Audit Record
+master.menu.auditor.job.listnot= List Jobs which i didn't written a Audit Record
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account

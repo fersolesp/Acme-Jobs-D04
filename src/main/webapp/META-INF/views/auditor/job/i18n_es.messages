@@ -1,0 +1,11 @@
+auditor.auditRecord.list.label.reference= Referencia
+auditor.auditRecord.list.label.deadline= Fecha Límite
+auditor.auditRecord.list.label.title= Título
+
+auditor.auditRecord.form.label.reference= Referencia:
+auditor.auditRecord.form.label.deadline= Fecha Límite:
+auditor.auditRecord.form.label.title= Título:
+auditor.auditRecord.form.label.salary= Salario:
+auditor.auditRecord.form.label.moreInfo= Más Información:
+auditor.auditRecord.form.label.status= Estado:
+auditor.auditRecord.form.button.return= Volver
