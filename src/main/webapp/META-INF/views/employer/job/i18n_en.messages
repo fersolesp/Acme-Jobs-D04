@@ -9,3 +9,6 @@ employer.job.form.label.salary= Salary:
 employer.job.form.label.moreInfo= More Information:
 employer.job.form.label.status= Status:
 employer.job.form.button.return= Return
+
+employer.job.form.panel.descriptor=Descriptor
+employer.job.form.label.description=Description:
