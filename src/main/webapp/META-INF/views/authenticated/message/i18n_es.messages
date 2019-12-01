@@ -6,7 +6,7 @@ authenticated.message.form.label.moment = Momento:
 authenticated.message.form.label.title = Título:
 authenticated.message.form.label.tags = Etiquetas:
 authenticated.message.form.label.body = Contenido:
-authenticated.message.form.label.author = Autor
+authenticated.message.form.label.author = Autor:
 
 authenticated.message.form.button.return = Volver
 
