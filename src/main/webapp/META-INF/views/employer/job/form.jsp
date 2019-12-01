@@ -12,11 +12,13 @@
 	<acme:form-url code="employer.job.form.label.moreInfo" path="moreInfo"/>
 	<acme:form-panel code="employer.job.form.panel.descriptor">
 		<acme:form-textbox code="employer.job.form.label.description" path="descriptor.description"/>
-		<acme:form-textarea code="employer.job.descriptor" path="descriptor.id"/>
+		<acme:form-textarea code="employer.job.form.label.descriptor" path="descriptor.id"/>
+		
+		<button type="button" onclick="javascript: clearReturnUrl(); redirect('/employer/duty/list-mine?id=${descriptor.id}')" 
+		class="btn btn-default">
+		<acme:message code="employer.job.form.label.descriptorMessage"/>
+		</button>
 	</acme:form-panel>
+	
 	<acme:form-return code="employer.job.form.button.return"/>
 </acme:form>
-<button type="button" onclick="javascript: clearReturnUrl(); redirect('/employer/duty/list-mine?id=${descriptor.id}')"
-			class="btn btn-primary">
-			<acme:message code="authenticated.job.form.label.descriptorMessage" />
-		</button>
