@@ -499,5 +499,122 @@
     	<property name="status" value="DRAFT"/>
     	<property name="employer" ref="employer1Employer"/>
     </bean>
+    
+    <!-- Workers -->
+    
+    <bean name="worker1UserAccount" class="acme.framework.entities.UserAccount">
+    	<property name="username" value="worker1"/>
+    	<property name="password" value="worker1"/>
+    	<property name="enabled" value="true"/>
+    	<property name="identity">
+    		<bean class="acme.datatypes.UserIdentity">
+    			<property name="name" value="Worker"/>
+    			<property name="surname" value="One"/>
+    			<property name="email" value="worker1@acme.com"/>
+    		</bean>
+    	</property>
+    	<property name="roles">
+    		<list>
+    			<ref bean="worker1Worker"/>
+    			<ref bean="worker1Authenticated"/>
+    		</list>
+    	</property>
+    </bean>
+    
+    <bean name="worker2UserAccount" class="acme.framework.entities.UserAccount">
+    	<property name="username" value="worker2"/>
+    	<property name="password" value="worker2"/>
+    	<property name="enabled" value="true"/>
+    	<property name="identity">
+    		<bean class="acme.datatypes.UserIdentity">
+    			<property name="name" value="Worker"/>
+    			<property name="surname" value="Second"/>
+    			<property name="email" value="worker2@acme.com"/>
+    		</bean>
+    	</property>
+    	<property name="roles">
+    		<list>
+    			<ref bean="worker2Worker"/>
+    			<ref bean="worker2Authenticated"/>
+    		</list>
+    	</property>
+    </bean>
+    
+    <bean name="worker1Worker" class="acme.entities.roles.Worker">
+    	<property name="qualifications" value="US ETSII IIS"/>
+    	<property name="skills" value="Python, PHP"/>
+    	<property name="userAccount" ref="worker1UserAccount"/>
+    </bean>
+    
+    <bean name="worker1Authenticated" class="acme.framework.entities.Authenticated">
+    	<property name="userAccount" ref="worker1UserAccount"/>
+    </bean>
+    
+    <bean name="worker2Worker" class="acme.entities.roles.Worker">
+    	<property name="qualifications" value="US ETSII IIS"/>
+    	<property name="skills" value="Java, JavaScript"/>
+    	<property name="userAccount" ref="worker2UserAccount"/>
+    </bean>
+    
+    <bean name="worker2Authenticated" class="acme.framework.entities.Authenticated">
+    	<property name="userAccount" ref="worker2UserAccount"/>
+    </bean>
+    
+    <!-- Applications -->
   
+  	<bean name="application1" class="acme.entities.applications.Application">
+    	<property name="referenceNumber" value="EMP1-JOB1:WOR1"/>
+    	<property name="creationMoment" value="2019/07/01 20:00"/>
+    	<property name="status" value="ACCEPTED"/>
+    	<property name="statement" value="I want to apply for this job"/>
+    	<property name="skills" value="Python, PHP"/>
+    	<property name="qualifications" value="IIS"/>
+    	<property name="worker" ref="worker1Worker"/>
+    	<property name="job" ref="job1"/>
+    </bean>
+    
+    <bean name="application2" class="acme.entities.applications.Application">
+    	<property name="referenceNumber" value="EMP1-JOB2:WOR2"/>
+    	<property name="creationMoment" value="2019/02/01 19:30"/>
+    	<property name="status" value="ACCEPTED"/>
+    	<property name="statement" value="I want to apply for this job"/>
+    	<property name="skills" value="Java, JavaScript"/>
+    	<property name="qualifications" value="IIS"/>
+    	<property name="worker" ref="worker2Worker"/>
+    	<property name="job" ref="job2"/>
+    </bean>
+    
+    <bean name="application3" class="acme.entities.applications.Application">
+    	<property name="referenceNumber" value="EMP2-JOB3:WOR1"/>
+    	<property name="creationMoment" value="2019/10/01 21:45"/>
+    	<property name="status" value="PENDING"/>
+    	<property name="statement" value="I want to apply for this job"/>
+    	<property name="skills" value="Python, JavaScript"/>
+    	<property name="qualifications" value="IIS"/>
+    	<property name="worker" ref="worker1Worker"/>
+    	<property name="job" ref="job3"/>
+    </bean>
+    
+    <bean name="application4" class="acme.entities.applications.Application">
+    	<property name="referenceNumber" value="EMP2-JOB4:WOR2"/>
+    	<property name="creationMoment" value="2019/09/01 22:00"/>
+    	<property name="status" value="PENDING"/>
+    	<property name="statement" value="I want to apply for this job"/>
+    	<property name="skills" value="Java, PHP"/>
+    	<property name="qualifications" value="IIS"/>
+    	<property name="worker" ref="worker2Worker"/>
+    	<property name="job" ref="job4"/>
+    </bean>
+    
+    <bean name="application5" class="acme.entities.applications.Application">
+    	<property name="referenceNumber" value="EMP1-JOB5:WOR1"/>
+    	<property name="creationMoment" value="2019/08/01 23:10"/>
+    	<property name="status" value="REJECTED"/>
+    	<property name="statement" value="I want to apply for this job"/>
+    	<property name="skills" value="Java, JavaScript"/>
+    	<property name="qualifications" value="IIS"/>
+    	<property name="worker" ref="worker1Worker"/>
+    	<property name="job" ref="job5"/>
+    </bean>
+  	
 </beans>
