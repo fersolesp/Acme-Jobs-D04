@@ -23,9 +23,17 @@
        drop 
        foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
 
+    alter table `duty` 
+       drop 
+       foreign key `FK3cc3garl37bl7gswreqwr7pj4`;
+
     alter table `employer` 
        drop 
        foreign key FK_na4dfobmeuxkwf6p75abmb2tr;
+
+    alter table `job` 
+       drop 
+       foreign key `FKfqwyynnbcsq0htxho3vchpd2u`;
 
     alter table `job` 
        drop 
@@ -64,6 +72,10 @@
     drop table if exists `cornac_bulletin`;
 
     drop table if exists `customisation_parameter`;
+
+    drop table if exists `descriptor`;
+
+    drop table if exists `duty`;
 
     drop table if exists `employer`;
 

@@ -21,14 +21,12 @@ public class AuthenticatedJobListService implements AbstractListService<Authenti
 
 	@Override
 	public boolean authorise(final Request<Job> request) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		return true;
 	}
 
 	@Override
 	public void unbind(final Request<Job> request, final Job entity, final Model model) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -38,7 +36,6 @@ public class AuthenticatedJobListService implements AbstractListService<Authenti
 
 	@Override
 	public Collection<Job> findMany(final Request<Job> request) {
-		// TODO Auto-generated method stub
 		assert request != null;
 
 		Collection<Job> result;
