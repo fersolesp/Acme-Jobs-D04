@@ -1,3 +1,5 @@
 administrator.chart.form.title.totalSectors= Total Companies and Investors per Sector
 administrator.chart.form.label.investor= INVESTORS
 administrator.chart.form.label.companies= COMPANIES
+administrator.chart.form.label.jobs= JOBS
+administrator.chart.form.label.applications= APPLICATIONS

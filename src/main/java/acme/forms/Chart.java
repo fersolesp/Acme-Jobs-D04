@@ -20,4 +20,11 @@ public class Chart implements Serializable {
 	Object[]					investorSector;
 	Object[]					companySector;
 
+	//D04
+	Double						ratioPublishedJobs;
+	Double						ratioDraftJobs;
+	Double						ratioPendingApplications;
+	Double						ratioAcceptedApplications;
+	Double						ratioRejectedApplications;
+
 }

@@ -31,7 +31,7 @@ public class AdministratorChartShowService implements AbstractShowService<Admini
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "CommonSectorsOfCompanies", "CommonSectorsOfInvestors", "investorSector", "companySector");
+		request.unbind(entity, model, "CommonSectorsOfCompanies", "CommonSectorsOfInvestors", "investorSector", "companySector", "ratioPublishedJobs", "ratioDraftJobs", "ratioPendingApplications", "ratioAcceptedApplications", "ratioRejectedApplications");
 	}
 
 	@Override
@@ -44,6 +44,12 @@ public class AdministratorChartShowService implements AbstractShowService<Admini
 		result.setCommonSectorsOfInvestors(this.repository.findCommonSectorsOfInvestors());
 		result.setInvestorSector(this.repository.findInvestorSector());
 		result.setCompanySector(this.repository.findCompanySector());
+
+		result.setRatioAcceptedApplications(this.repository.findRatioAcceptedApplications());
+		result.setRatioPendingApplications(this.repository.findRatioPendingApplications());
+		result.setRatioRejectedApplications(this.repository.findRatioRejectedApplications());
+		result.setRatioDraftJobs(this.repository.findRatioDraftJob());
+		result.setRatioPublishedJobs(this.repository.findRatioPublishedJob());
 		return result;
 	}
 
