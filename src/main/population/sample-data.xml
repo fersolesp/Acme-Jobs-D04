@@ -340,8 +340,8 @@
     	<property name="enabled" value="true"/>
     	<property name="identity">
     		<bean class="acme.datatypes.UserIdentity">
-    			<property name="name" value="Sponsor"/>
-    			<property name="surname" value="One"/>
+    			<property name="name" value="Spencer"/>
+    			<property name="surname" value="James"/>
     			<property name="email" value="sponsor1@acme.com"/>
     		</bean>
     	</property>
@@ -359,8 +359,8 @@
     	<property name="enabled" value="true"/>
     	<property name="identity">
     		<bean class="acme.datatypes.UserIdentity">
-    			<property name="name" value="Sponsor"/>
-    			<property name="surname" value="Second"/>
+    			<property name="name" value="Sophie"/>
+    			<property name="surname" value="Turner"/>
     			<property name="email" value="sponsor2@acme.com"/>
     		</bean>
     	</property>
