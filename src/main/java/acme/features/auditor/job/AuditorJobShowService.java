@@ -21,11 +21,9 @@ public class AuditorJobShowService implements AbstractShowService<Auditor, Job> 
 	public boolean authorise(final Request<Job> request) {
 		assert request != null;
 
-		if (request.getPrincipal().hasRole(Auditor.class)) {
-			return true;
-		}
-
-		return false;
+		int jobId = request.getModel().getInteger("id");
+		int jobPublished = this.repository.findIfJobIsPublished(jobId);
+		return jobPublished == 1;
 	}
 
 	@Override

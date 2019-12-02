@@ -7,6 +7,14 @@
        drop 
        foreign key FK_6lnbc6fo3om54vugoh8icg78m;
 
+    alter table `application` 
+       drop 
+       foreign key `FKoa6p4s2oyy7tf80xwc4r04vh6`;
+
+    alter table `application` 
+       drop 
+       foreign key `FKmbjdoxi3o93agxosoate4sxbt`;
+
     alter table `audit_record` 
        drop 
        foreign key `FKdcrrgv6rkfw2ruvdja56un4ji`;
@@ -18,14 +26,6 @@
     alter table `auditor` 
        drop 
        foreign key FK_clqcq9lyspxdxcp6o4f3vkelj;
-
-    alter table `application` 
-       drop 
-       foreign key `FKoa6p4s2oyy7tf80xwc4r04vh6`;
-
-    alter table `application` 
-       drop 
-       foreign key `FKmbjdoxi3o93agxosoate4sxbt`;
 
     alter table `authenticated` 
        drop 
@@ -55,11 +55,6 @@
        drop 
        foreign key `FK3rxjf8uh6fh2u990pe8i2at0e`;
 
-
-    alter table `non_commercial_banner` 
-       drop 
-       foreign key `FKpcpr0xb5k7s4rxv5pulstt5v9`;
-
     alter table `message` 
        drop 
        foreign key `FK3ny0h1379q528toyokq81noiu`;
@@ -68,6 +63,9 @@
        drop 
        foreign key `FKn5adlx3oqjna7aupm8gwg3fuj`;
 
+    alter table `non_commercial_banner` 
+       drop 
+       foreign key `FKpcpr0xb5k7s4rxv5pulstt5v9`;
 
     alter table `provider` 
        drop 
@@ -87,11 +85,11 @@
 
     drop table if exists `anonymous`;
 
+    drop table if exists `application`;
+
     drop table if exists `audit_record`;
 
     drop table if exists `auditor`;
-
-    drop table if exists `application`;
 
     drop table if exists `authenticated`;
 
