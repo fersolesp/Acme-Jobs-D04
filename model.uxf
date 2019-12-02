@@ -136,7 +136,7 @@ bg=yellow</panel_attributes>
       <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;60.0;120.0;10.0</additional_attributes>
+    <additional_attributes>10.0;110.0;110.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -147,7 +147,7 @@ bg=yellow</panel_attributes>
       <h>27</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+    <additional_attributes>10.0;50.0;110.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -158,7 +158,7 @@ bg=yellow</panel_attributes>
       <h>81</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;70.0</additional_attributes>
+    <additional_attributes>10.0;10.0;110.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -537,7 +537,7 @@ Banner
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 CommercialBanner
 --
-+ creditCard: String{NotBlank, CreditCardNumber}</panel_attributes>
++ creditCard: String {NotBlank, CreditCardNumber}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -786,5 +786,45 @@ m1=1
 m2=0..*
 &lt; Created by </panel_attributes>
     <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1269</x>
+      <y>216</y>
+      <w>207</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1422</x>
+      <y>306</y>
+      <w>243</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Sponsor
+--
++ organisationName: String {NotBlank}
++ creditCard: String {CreditCardNumber}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1521</x>
+      <y>369</y>
+      <w>99</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-x
+m1=1
+m2=0..*
+Created by ^</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
 </diagram>

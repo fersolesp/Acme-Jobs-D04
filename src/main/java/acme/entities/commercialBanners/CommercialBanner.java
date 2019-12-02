@@ -2,11 +2,15 @@
 package acme.entities.commercialBanners;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.CreditCardNumber;
 
 import acme.entities.banners.Banner;
+import acme.entities.roles.Sponsor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,4 +25,12 @@ public class CommercialBanner extends Banner {
 	@CreditCardNumber
 	@NotBlank
 	private String				creditCard;
+
+	// Relationships ------------------------------------------
+
+	@NotNull
+	@Valid
+	@ManyToOne(optional = false)
+	private Sponsor				sponsor;
+
 }
