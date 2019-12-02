@@ -70,6 +70,11 @@ master.menu.authenticated.investor-records.list = List Investor Records
 master.menu.authenticated.offer.list= List Offers
 master.menu.authenticated.job.list= List Jobs
 
+# master.menu.worker ###################################################
+
+master.menu.worker = Worker
+master.menu.worker.application.list = List of Applications
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
@@ -106,6 +111,7 @@ master.menu.consumer.offer.create = Create an Offer
 # master.menu.employer ########################################################
 master.menu.employer= Employer
 master.menu.employer.job.list= List my Jobs
+master.menu.employer.application.list= List Applications of my Jobs
 
 # master.menu.user-account ####################################################
 
