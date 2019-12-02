@@ -69,6 +69,13 @@ master.menu.authenticated.challenge.list= Lista de Desafíos
 master.menu.authenticated.investor-records.list = Lista de Registros de Inversores
 master.menu.authenticated.offer.list= Lista de Ofertas
 master.menu.authenticated.job.list= Lista de Empleos
+master.menu.authenticated.messageThread.list = Lista de Hilos de Mensajes
+
+# master.menu.worker ###################################################
+
+master.menu.worker = Trabajador
+master.menu.worker.application.list = Lista de Solicitudes
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
@@ -105,6 +112,12 @@ master.menu.consumer.offer.create = Crear una Oferta
 # master.menu.employer ########################################################
 master.menu.employer= Empleado
 master.menu.employer.job.list= Listar mis Trabajos
+master.menu.employer.application.list= Listar las Solicitudes de mis Trabajos
+
+# master.menu.sponsor ########################################################
+master.menu.sponsor= Patrocinador
+master.menu.sponsor.commercial-banner.list= Listar mis "Banners" Comerciales
+master.menu.sponsor.non-commercial-banner.list= Listar mis "Banners" No Comerciales
 
 # master.menu.auditor ########################################################
 master.menu.auditor= Auditor
