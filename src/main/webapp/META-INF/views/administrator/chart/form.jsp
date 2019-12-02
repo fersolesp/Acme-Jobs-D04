@@ -8,6 +8,9 @@
 
 <div>
 	<canvas id="canvas"></canvas>
+<h2>
+	<acme:message code="administrator.chart.form.title.ratioByStatus"/>
+</h2>
 	<canvas id="canvas2"></canvas>
 </div>
 		   		
