@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>1089</x>
-      <y>189</y>
+      <y>315</y>
       <w>189</w>
       <h>45</h>
     </coordinates>
@@ -30,9 +30,9 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>693</x>
-      <y>108</y>
+      <y>225</y>
       <w>171</w>
-      <h>90</h>
+      <h>108</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Datatype&gt;&gt;
 UserIdentity
@@ -50,7 +50,7 @@ bg=orange
     <id>UMLNote</id>
     <coordinates>
       <x>693</x>
-      <y>36</y>
+      <y>162</y>
       <w>189</w>
       <h>45</h>
     </coordinates>
@@ -63,13 +63,13 @@ bg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>765</x>
-      <y>72</y>
+      <y>198</y>
       <w>27</w>
-      <h>54</h>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=..
 </panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -86,7 +86,7 @@ bg=blue</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1368</x>
-      <y>198</y>
+      <y>324</y>
       <w>72</w>
       <h>45</h>
     </coordinates>
@@ -101,7 +101,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1368</x>
-      <y>135</y>
+      <y>261</y>
       <w>72</w>
       <h>45</h>
     </coordinates>
@@ -116,7 +116,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1368</x>
-      <y>252</y>
+      <y>378</y>
       <w>72</w>
       <h>45</h>
     </coordinates>
@@ -131,7 +131,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1269</x>
-      <y>162</y>
+      <y>288</y>
       <w>126</w>
       <h>72</h>
     </coordinates>
@@ -142,7 +142,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1269</x>
-      <y>207</y>
+      <y>333</y>
       <w>126</w>
       <h>27</h>
     </coordinates>
@@ -153,7 +153,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1269</x>
-      <y>207</y>
+      <y>333</y>
       <w>126</w>
       <h>81</h>
     </coordinates>
@@ -164,7 +164,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>693</x>
-      <y>216</y>
+      <y>342</y>
       <w>171</w>
       <h>54</h>
     </coordinates>
@@ -210,7 +210,7 @@ Consumer
     <id>UMLClass</id>
     <coordinates>
       <x>495</x>
-      <y>108</y>
+      <y>234</y>
       <w>171</w>
       <h>63</h>
     </coordinates>
@@ -227,7 +227,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>495</x>
-      <y>189</y>
+      <y>315</y>
       <w>171</w>
       <h>99</h>
     </coordinates>
@@ -247,7 +247,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>495</x>
-      <y>306</y>
+      <y>432</y>
       <w>171</w>
       <h>72</h>
     </coordinates>
@@ -264,7 +264,7 @@ bg=yellow</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1044</x>
-      <y>0</y>
+      <y>126</y>
       <w>306</w>
       <h>117</h>
     </coordinates>
@@ -286,7 +286,7 @@ UserAccount
     <id>Relation</id>
     <coordinates>
       <x>1179</x>
-      <y>90</y>
+      <y>216</y>
       <w>63</w>
       <h>126</h>
     </coordinates>
@@ -455,7 +455,7 @@ Request
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>783</y>
+      <y>909</y>
       <w>342</w>
       <h>171</h>
     </coordinates>
@@ -723,5 +723,68 @@ m1=1
 m2=0..*
 &lt; Belongs to </panel_attributes>
     <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1575</x>
+      <y>153</y>
+      <w>297</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+MessageThread
+--
++ title: String {NotBlank}
++ moment: Date {Temporal(TIMESTAMP), Past}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1575</x>
+      <y>351</y>
+      <w>297</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Message
+--
++ title: String {NotBlank}
++ moment: Date {Temporal(TIMESTAMP), Past}
++ tags: String
++ body: String {NotBlank}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1710</x>
+      <y>225</y>
+      <w>45</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-x
+m1=1
+m2=1..*
+Has</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1431</x>
+      <y>387</y>
+      <w>162</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-x
+m1=1
+m2=0..*
+&lt; Created by </panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
   </element>
 </diagram>
