@@ -11,7 +11,7 @@
 	<acme:form-textarea code="employer.application.form.label.skills" path="skills"/>
 	<acme:form-textarea code="employer.application.form.label.qualifications" path="qualifications"/>
 	
-	<button type="button" onclick="javascript: clearReturnUrl(); redirect('/authenticated/job/list-mine?id=${job.id}')"
+	<button type="button" onclick="javascript: clearReturnUrl(); redirect('/employer/job/show?id=${job.id}')"
 		class="btn btn-default">
 		<acme:message code="employer.application.form.label.jobOf" />
 	</button>
