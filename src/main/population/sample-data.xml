@@ -459,6 +459,7 @@
     	<property name="status" value="PUBLISHED"/>
     	<property name="moreInfo" value="http://www.example.com"/>
     	<property name="employer" ref="employer1Employer"/>
+    	<property name="descriptor" ref="descriptor1"/>
     </bean>
     
     <bean name="job2" class="acme.entities.jobs.Job">
@@ -469,6 +470,7 @@
     	<property name="status" value="PUBLISHED"/>
     	<property name="moreInfo" value="http://www.example2.com"/>
     	<property name="employer" ref="employer1Employer"/>
+    	<property name="descriptor" ref="descriptor2"/>
     </bean>
     
     <bean name="job3" class="acme.entities.jobs.Job">
@@ -479,6 +481,7 @@
     	<property name="status" value="DRAFT"/>
     	<property name="moreInfo" value="http://www.example3.com"/>
     	<property name="employer" ref="employer2Employer"/>
+    	<property name="descriptor" ref="descriptor3"/>
     </bean>
     
     <bean name="job4" class="acme.entities.jobs.Job">
@@ -489,6 +492,7 @@
     	<property name="status" value="PUBLISHED"/>
     	<property name="moreInfo" value="http://www.example4.com"/>
     	<property name="employer" ref="employer2Employer"/>
+    	<property name="descriptor" ref="descriptor4"/>
     </bean>
     
     <bean name="job5" class="acme.entities.jobs.Job">
@@ -498,6 +502,80 @@
     	<property name="salary" value="€ 20,000.98"/>
     	<property name="status" value="DRAFT"/>
     	<property name="employer" ref="employer1Employer"/>
+    	<property name="descriptor" ref="descriptor5"/>
     </bean>
+    
+     <!-- Descriptors -->
+     
+  	<bean name="descriptor1" class="acme.entities.descriptors.Descriptor">
+  		<property name="description" value="This is a description"/>
+  	</bean>
+  	
+  	<bean name="descriptor2" class="acme.entities.descriptors.Descriptor">
+  		<property name="description" value="This is a description"/>
+  	</bean>
+  	
+  	<bean name="descriptor3" class="acme.entities.descriptors.Descriptor">
+  		<property name="description" value="This is a description"/>
+  	</bean>
+  	
+  	<bean name="descriptor4" class="acme.entities.descriptors.Descriptor">
+  		<property name="description" value="This is a description"/>
+  	</bean>
+  	
+  	<bean name="descriptor5" class="acme.entities.descriptors.Descriptor">
+  		<property name="description" value="This is a description"/>
+  	</bean>
+  	
+  	<!-- Duties -->
+  	
+  	<bean name="duty1" class="acme.entities.duties.Duty">
+  		<property name="title" value="Duty1"/>
+  		<property name="description" value="This is a description"/>
+  		<property name="amountTime" value="90"/>
+  		<property name="descriptor" ref="descriptor3"/>
+  	</bean>
+  	
+  	<bean name="duty2" class="acme.entities.duties.Duty">
+  		<property name="title" value="Duty2"/>
+  		<property name="description" value="This is a description"/>
+  		<property name="amountTime" value="80"/>
+  		<property name="descriptor" ref="descriptor1"/>
+  	</bean>
+  	
+  	  	<bean name="duty3" class="acme.entities.duties.Duty">
+  		<property name="title" value="Duty3"/>
+  		<property name="description" value="This is a description"/>
+  		<property name="amountTime" value="50"/>
+  		<property name="descriptor" ref="descriptor4"/>
+  	</bean>
+  	
+  	  	<bean name="duty4" class="acme.entities.duties.Duty">
+  		<property name="title" value="Duty4"/>
+  		<property name="description" value="This is a description"/>
+  		<property name="amountTime" value="20"/>
+  		<property name="descriptor" ref="descriptor1"/>
+  	</bean>
+  	
+  	  	<bean name="duty5" class="acme.entities.duties.Duty">
+  		<property name="title" value="Duty1"/>
+  		<property name="description" value="This is a description"/>
+  		<property name="amountTime" value="30"/>
+  		<property name="descriptor" ref="descriptor1"/>
+  	</bean>
+  	
+  	  	<bean name="duty6" class="acme.entities.duties.Duty">
+  		<property name="title" value="Duty6"/>
+  		<property name="description" value="This is a description"/>
+  		<property name="amountTime" value="10"/>
+  		<property name="descriptor" ref="descriptor2"/>
+  	</bean>
+  	
+  	  	<bean name="duty7" class="acme.entities.duties.Duty">
+  		<property name="title" value="Duty7"/>
+  		<property name="description" value="This is a description"/>
+  		<property name="amountTime" value="50"/>
+  		<property name="descriptor" ref="descriptor5"/>
+  	</bean>
   
 </beans>

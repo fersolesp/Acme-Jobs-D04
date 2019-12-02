@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.job;
+package acme.features.authenticated.duty;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -8,6 +8,7 @@ import java.util.GregorianCalendar;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.duties.Duty;
 import acme.entities.jobs.Job;
 import acme.entities.jobs.Status;
 import acme.framework.components.Model;
@@ -16,42 +17,43 @@ import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedJobShowService implements AbstractShowService<Authenticated, Job> {
+public class AuthenticatedDutyShowService implements AbstractShowService<Authenticated, Duty> {
 
 	@Autowired
-	AuthenticatedJobRepository repository;
+	AuthenticatedDutyRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Job> request) {
+	public boolean authorise(final Request<Duty> request) {
 		assert request != null;
-		Integer id = request.getModel().getInteger("id");
-		Job job = this.repository.findOneJobById(id);
+
+		Integer dutyId = request.getModel().getInteger("id");
 		Calendar calendar = new GregorianCalendar();
 		Date minimumDeadLine = calendar.getTime();
+		Job job = this.repository.findJobByDutyId(dutyId);
 
 		return job.getStatus() == Status.PUBLISHED && job.getDeadline().after(minimumDeadLine);
 	}
 
 	@Override
-	public void unbind(final Request<Job> request, final Job entity, final Model model) {
+	public void unbind(final Request<Duty> request, final Duty entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "title", "deadline");
-		request.unbind(entity, model, "salary", "moreInfo", "status", "descriptor", "descriptor.description");
+		request.unbind(entity, model, "title", "description", "amountTime");
+
 	}
 
 	@Override
-	public Job findOne(final Request<Job> request) {
+	public Duty findOne(final Request<Duty> request) {
 		assert request != null;
 
-		Job result;
+		Duty result;
 		int id;
 
 		id = request.getModel().getInteger("id");
-		result = this.repository.findOneJobById(id);
+		result = this.repository.findOneDutyById(id);
 
 		return result;
 	}
