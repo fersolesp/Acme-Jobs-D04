@@ -397,9 +397,9 @@
     	<property name="enabled" value="true"/>
     	<property name="identity">
     		<bean class="acme.datatypes.UserIdentity">
-    			<property name="name" value="Employer"/>
-    			<property name="surname" value="One"/>
-    			<property name="email" value="employer1@acme.com"/>
+    			<property name="name" value="Robert"/>
+    			<property name="surname" value="Williams"/>
+    			<property name="email" value="RobertWilliams@acme.com"/>
     		</bean>
     	</property>
     	<property name="roles">
@@ -416,9 +416,9 @@
     	<property name="enabled" value="true"/>
     	<property name="identity">
     		<bean class="acme.datatypes.UserIdentity">
-    			<property name="name" value="Employer"/>
-    			<property name="surname" value="Second"/>
-    			<property name="email" value="employer2@acme.com"/>
+    			<property name="name" value="John"/>
+    			<property name="surname" value="Ramírez"/>
+    			<property name="email" value="JohnRamirez@acme.com"/>
     		</bean>
     	</property>
     	<property name="roles">
@@ -465,7 +465,7 @@
     	<property name="reference" value="EMP1-JOB2"/>
     	<property name="title" value="Title 2"/>
     	<property name="deadline" value="2031/12/11 23:59"/>
-    	<property name="salary" value="$ 15,000.98"/>
+    	<property name="salary" value="€ 15,000.98"/>
     	<property name="status" value="PUBLISHED"/>
     	<property name="moreInfo" value="http://www.example2.com"/>
     	<property name="employer" ref="employer1Employer"/>
@@ -485,7 +485,7 @@
     	<property name="reference" value="EMP2-JOB2"/>
     	<property name="title" value="Title 4"/>
     	<property name="deadline" value="2018/12/11 23:59"/>
-    	<property name="salary" value="$ 11,000.98"/>
+    	<property name="salary" value="€ 11,000.98"/>
     	<property name="status" value="PUBLISHED"/>
     	<property name="moreInfo" value="http://www.example4.com"/>
     	<property name="employer" ref="employer2Employer"/>
@@ -508,9 +508,9 @@
     	<property name="enabled" value="true"/>
     	<property name="identity">
     		<bean class="acme.datatypes.UserIdentity">
-    			<property name="name" value="Worker"/>
-    			<property name="surname" value="One"/>
-    			<property name="email" value="worker1@acme.com"/>
+    			<property name="name" value="Philips"/>
+    			<property name="surname" value="Hazukawa"/>
+    			<property name="email" value="PhilipsHazukawa@acme.com"/>
     		</bean>
     	</property>
     	<property name="roles">
@@ -527,9 +527,9 @@
     	<property name="enabled" value="true"/>
     	<property name="identity">
     		<bean class="acme.datatypes.UserIdentity">
-    			<property name="name" value="Worker"/>
-    			<property name="surname" value="Second"/>
-    			<property name="email" value="worker2@acme.com"/>
+    			<property name="name" value="Misaki"/>
+    			<property name="surname" value="Makoto"/>
+    			<property name="email" value="MisakiMakoto@acme.com"/>
     		</bean>
     	</property>
     	<property name="roles">
