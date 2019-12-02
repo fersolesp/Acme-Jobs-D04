@@ -20,4 +20,21 @@ public interface AdministratorChartRepository extends AbstractRepository {
 
 	@Query("select i.workSector,count(i) FROM InvestorRecords i where i.workSector NOT IN (select c.sector FROM CompanyRecord c) group by i.workSector order by i.workSector")
 	Object[] findInvestorSector();
+
+	//D04
+
+	@Query("select 1.0*count(j)/(select count(b) from Job b) from Job j where j.status=1")
+	Double findRatioPublishedJob();
+
+	@Query("select 1.0*count(j)/(select count(b) from Job b) from Job j where j.status=0")
+	Double findRatioDraftJob();
+
+	@Query("select 1.0*count(a)/(select count(b) from Application b) from Application a where a.status=2")
+	Double findRatioPendingApplications();
+
+	@Query("select 1.0*count(a)/(select count(b) from Application b) from Application a where a.status=0")
+	Double findRatioRejectedApplications();
+
+	@Query("select 1.0*count(a)/(select count(b) from Application b) from Application a where a.status=1")
+	Double findRatioAcceptedApplications();
 }

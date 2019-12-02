@@ -25,4 +25,10 @@ public class Dashboard implements Serializable {
 	Double						minRewardOfActiveOffers;
 	Double						avgRewardOfActiveOffers;
 	Double						standardDeviationRewardOfActiveOffers;
+
+	//D04
+
+	Double						avgJobsPerEmployer;
+	Double						avgApplicationsPerEmployer;
+	Double						avgApplicationsPerWorker;
 }

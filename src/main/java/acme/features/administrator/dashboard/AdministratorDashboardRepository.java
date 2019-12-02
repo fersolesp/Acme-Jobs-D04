@@ -41,4 +41,15 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 
 	@Query("SELECT stddev((a.maxReward.amount + a.minReward.amount)/2) FROM Offer a where a.deadline > current_date()")
 	Object[] findStandardDeviationRewardOfActiveOffers();
+
+	//DO4
+
+	@Query("SELECT avg(select count(j) from Job j where j.employer.id=e.id) from Employer e")
+	Object[] findAvgJobsPerEmployer();
+
+	@Query("SELECT avg(select count(a) from Application a where a.worker.id=w.id) from Worker w")
+	Object[] findAvgApplicationsPerWorker();
+
+	@Query("SELECT avg(select count(a) from Application a where exists (select j from Job j where j.employer.id=e.id and a.job.id=j.id)) from Employer e")
+	Object[] findAvgApplicationsPerEmployer();
 }
