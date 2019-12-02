@@ -8,4 +8,7 @@ authenticated.job.form.label.title= Title:
 authenticated.job.form.label.salary= Salary:
 authenticated.job.form.label.moreInfo= More Information:
 authenticated.job.form.label.status= Status:
+authenticated.job.form.label.descriptor.description= Description:
 authenticated.job.form.button.return= Return
+
+authenticated.job.form.label.descriptorMessage= Duties

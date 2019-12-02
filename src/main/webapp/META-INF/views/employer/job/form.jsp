@@ -10,6 +10,14 @@
 	<acme:form-moment code="employer.job.form.label.deadline" path="deadline"/>
 	<acme:form-money code="employer.job.form.label.salary" path="salary"/>
 	<acme:form-url code="employer.job.form.label.moreInfo" path="moreInfo"/>
+	<acme:form-panel code="employer.job.form.panel.descriptor">
+		<acme:form-textbox code="employer.job.form.label.description" path="descriptor.description"/>
+		
+		<button type="button" onclick="javascript: clearReturnUrl(); redirect('/employer/duty/list-mine?id=${descriptor.id}')" 
+		class="btn btn-default">
+		<acme:message code="employer.job.form.label.descriptorMessage"/>
+		</button>
+	</acme:form-panel>
 	
 	<acme:form-return code="employer.job.form.button.return"/>
 </acme:form>
