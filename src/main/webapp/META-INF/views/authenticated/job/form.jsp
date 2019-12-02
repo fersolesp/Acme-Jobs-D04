@@ -13,7 +13,7 @@
 	<acme:form-textarea code="authenticated.job.form.label.descriptor.description" path="descriptor.description"/>
 	
 	<button type="button" onclick="javascript: clearReturnUrl(); redirect('/authenticated/duty/list-mine?id=${descriptor.id}')"
-			class="btn btn-primary">
+			class="btn btn-default">
 			<acme:message code="authenticated.job.form.label.descriptorMessage" />
 	</button>
 		

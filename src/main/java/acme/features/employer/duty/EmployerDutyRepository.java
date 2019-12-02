@@ -20,4 +20,7 @@ public interface EmployerDutyRepository extends AbstractRepository {
 
 	@Query("select e.id from Employer e where e.id IN (select j.employer.id from Job j where j.descriptor.id=?1)")
 	Integer findEmployerByDescriptor(int descriptorId);
+
+	@Query("select j.employer.id from Job j where j.descriptor.id = (select d.descriptor.id from Duty d where d.id=?1)")
+	Integer findJobByDutyId(int dutyId);
 }

@@ -1,6 +1,10 @@
 
 package acme.features.authenticated.job;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,8 +27,10 @@ public class AuthenticatedJobShowService implements AbstractShowService<Authenti
 		assert request != null;
 		Integer id = request.getModel().getInteger("id");
 		Job job = this.repository.findOneJobById(id);
+		Calendar calendar = new GregorianCalendar();
+		Date minimumDeadLine = calendar.getTime();
 
-		return job.getStatus() == Status.PUBLISHED;
+		return job.getStatus() == Status.PUBLISHED && job.getDeadline().after(minimumDeadLine);
 	}
 
 	@Override

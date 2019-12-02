@@ -1,7 +1,10 @@
 
 package acme.features.authenticated.duty;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,7 +32,10 @@ public class AuthenticatedDutyListMineService implements AbstractListService<Aut
 		descriptorId = request.getModel().getInteger("id");
 		Job job = this.repository.findJobByDescriptor(descriptorId);
 
-		return job.getStatus() == Status.PUBLISHED;
+		Calendar calendar = new GregorianCalendar();
+		Date minimumDeadLine = calendar.getTime();
+
+		return job.getStatus() == Status.PUBLISHED && job.getDeadline().after(minimumDeadLine);
 	}
 
 	@Override
