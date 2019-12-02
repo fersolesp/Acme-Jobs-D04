@@ -1,10 +1,15 @@
 
 package acme.features.authenticated.job;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.jobs.Job;
+import acme.entities.jobs.Status;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
@@ -20,8 +25,12 @@ public class AuthenticatedJobShowService implements AbstractShowService<Authenti
 	@Override
 	public boolean authorise(final Request<Job> request) {
 		assert request != null;
+		Integer id = request.getModel().getInteger("id");
+		Job job = this.repository.findOneJobById(id);
+		Calendar calendar = new GregorianCalendar();
+		Date minimumDeadLine = calendar.getTime();
 
-		return true;
+		return job.getStatus() == Status.PUBLISHED && job.getDeadline().after(minimumDeadLine);
 	}
 
 	@Override
@@ -31,7 +40,7 @@ public class AuthenticatedJobShowService implements AbstractShowService<Authenti
 		assert model != null;
 
 		request.unbind(entity, model, "reference", "title", "deadline");
-		request.unbind(entity, model, "salary", "moreInfo", "status");
+		request.unbind(entity, model, "salary", "moreInfo", "status", "descriptor", "descriptor.description");
 	}
 
 	@Override
