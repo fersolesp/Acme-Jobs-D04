@@ -784,7 +784,61 @@
     	<property name="body" value="Message 4's body!"/>
     	<property name="messageThread" ref="messageThread1"/>
     	<property name="authenticated" ref="employer1Authenticated"/>
-    </bean>    
+    </bean>  
+    
+    <bean name="message5" class="acme.entities.messages.Message">
+    	<property name="title" value="Message 5"/>
+    	<property name="moment" value="2019/04/20 12:00"/>
+    	<property name="tags" value="social, trendy"/>
+    	<property name="body" value="Message 5's body!"/>
+    	<property name="messageThread" ref="messageThread1"/>
+    	<property name="authenticated" ref="auditor1Authenticated"/>
+    </bean> 
+    
+    <bean name="message6" class="acme.entities.messages.Message">
+    	<property name="title" value="Message 6"/>
+    	<property name="moment" value="2019/04/20 12:00"/>
+    	<property name="tags" value="social, trendy"/>
+    	<property name="body" value="Message 6's body!"/>
+    	<property name="messageThread" ref="messageThread2"/>
+    	<property name="authenticated" ref="auditor2Authenticated"/>
+    </bean>  
+    
+    <bean name="message7" class="acme.entities.messages.Message">
+    	<property name="title" value="Message 7"/>
+    	<property name="moment" value="2019/04/20 12:00"/>
+    	<property name="tags" value="social, trendy"/>
+    	<property name="body" value="Message 7's body!"/>
+    	<property name="messageThread" ref="messageThread2"/>
+    	<property name="authenticated" ref="worker1Authenticated"/>
+    </bean>  
+    
+     <bean name="message8" class="acme.entities.messages.Message">
+    	<property name="title" value="Message 8"/>
+    	<property name="moment" value="2019/04/20 12:00"/>
+    	<property name="tags" value="social, trendy"/>
+    	<property name="body" value="Message 8's body!"/>
+    	<property name="messageThread" ref="messageThread1"/>
+    	<property name="authenticated" ref="worker2Authenticated"/>
+    </bean>  
+    
+    <bean name="message9" class="acme.entities.messages.Message">
+    	<property name="title" value="Message 9"/>
+    	<property name="moment" value="2019/04/20 12:00"/>
+    	<property name="tags" value="social, trendy"/>
+    	<property name="body" value="Message 9's body!"/>
+    	<property name="messageThread" ref="messageThread1"/>
+    	<property name="authenticated" ref="sponsor1Authenticated"/>
+    </bean> 
+    
+     <bean name="message10" class="acme.entities.messages.Message">
+    	<property name="title" value="Message 10"/>
+    	<property name="moment" value="2019/04/20 12:00"/>
+    	<property name="tags" value="social, trendy"/>
+    	<property name="body" value="Message 10's body!"/>
+    	<property name="messageThread" ref="messageThread2"/>
+    	<property name="authenticated" ref="sponsor2Authenticated"/>
+    </bean>
     
      <!-- Descriptors -->
      

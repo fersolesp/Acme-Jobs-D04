@@ -1,6 +1,7 @@
 
 package acme.entities.companyRecords;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Index;
 import javax.persistence.Table;
@@ -39,6 +40,7 @@ public class CompanyRecord extends DomainEntity {
 	private String				ceo;
 
 	@NotBlank
+	@Column(length = 1024)
 	private String				description;
 
 	@NotBlank
