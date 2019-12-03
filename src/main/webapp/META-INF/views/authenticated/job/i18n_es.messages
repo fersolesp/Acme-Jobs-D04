@@ -12,3 +12,4 @@ authenticated.job.form.label.descriptor.description= Descripción:
 authenticated.job.form.button.return= Volver
 
 authenticated.job.form.label.descriptorMessage= Obligaciones
+authenticated.job.form.button.auditRecord= Registros de Auditoria
