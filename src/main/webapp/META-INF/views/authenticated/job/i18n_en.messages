@@ -12,3 +12,4 @@ authenticated.job.form.label.descriptor.description= Description:
 authenticated.job.form.button.return= Return
 
 authenticated.job.form.label.descriptorMessage= Duties
+authenticated.job.form.button.auditRecord= Audit Records

@@ -16,6 +16,11 @@
 			class="btn btn-default">
 			<acme:message code="authenticated.job.form.label.descriptorMessage" />
 	</button>
+	
+	<button type="button" onclick="javascript: clearReturnUrl(); redirect('/authenticated/audit-record/list?id=${id}')"
+            class="btn btn-default">
+            <acme:message code="authenticated.job.form.button.auditRecord"/>
+    </button>
 		
 	<acme:form-return code="authenticated.job.form.button.return"/>
 </acme:form>

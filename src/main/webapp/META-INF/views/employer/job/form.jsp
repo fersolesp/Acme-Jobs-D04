@@ -17,6 +17,11 @@
 		class="btn btn-default">
 		<acme:message code="employer.job.form.label.descriptorMessage"/>
 		</button>
+		
+		<button type="button" onclick="javascript: clearReturnUrl(); redirect('/employer/audit-record/list?id=${id}')" 
+		class="btn btn-default">
+		<acme:message code="employer.job.form.label.auditRecords"/>
+		</button>
 	</acme:form-panel>
 	
 	<acme:form-return code="employer.job.form.button.return"/>
