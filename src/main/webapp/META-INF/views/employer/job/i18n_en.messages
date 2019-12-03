@@ -15,4 +15,4 @@ employer.job.form.button.return= Return
 employer.job.form.panel.descriptor=Descriptor
 employer.job.form.label.description=Description:
 employer.job.form.label.descriptorMessage= Duties
-employer.job.form.label.auditRecords= Attached Audit Records
+employer.job.form.label.auditRecords= Audit Records

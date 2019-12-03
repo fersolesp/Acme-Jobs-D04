@@ -14,7 +14,7 @@ import acme.framework.entities.Principal;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class SponsorNonCommercialBannerListService implements AbstractListService<Sponsor, NonCommercialBanner> {
+public class SponsorNonCommercialBannerListMineService implements AbstractListService<Sponsor, NonCommercialBanner> {
 
 	@Autowired
 	SponsorNonCommercialBannerRepository repository;

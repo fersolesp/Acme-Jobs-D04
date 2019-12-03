@@ -9,4 +9,4 @@ authenticated.message.form.label.body = Body:
 authenticated.message.form.label.author = Author:
 
 authenticated.message.form.button.return = Return
-
+authenticated.message.list.button.return= Return

@@ -7,3 +7,7 @@
 	<acme:list-column code="employer.duty.list.label.title" path="title" width="30%"/>
 	<acme:list-column code="employer.duty.list.label.description" path="description" width="70%"/>
 </acme:list>
+
+<acme:form>
+	<acme:form-return code="employer.duty.list.button.return"/>
+</acme:form>

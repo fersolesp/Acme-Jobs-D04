@@ -18,7 +18,7 @@ import acme.framework.controllers.AbstractController;
 public class SponsorNonCommercialBannerController extends AbstractController<Sponsor, NonCommercialBanner> {
 
 	@Autowired
-	private SponsorNonCommercialBannerListService	listMineService;
+	private SponsorNonCommercialBannerListMineService	listMineService;
 
 	@Autowired
 	private SponsorNonCommercialBannerShowService	showService;

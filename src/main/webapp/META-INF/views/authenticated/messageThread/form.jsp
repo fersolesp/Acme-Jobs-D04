@@ -20,5 +20,4 @@
 	<acme:form-return code="authenticated.messageThread.form.button.return"/>
 </acme:form>
 
-<%-- 	<a href="authenticated/message/list?id=${id}">jajaja</a> --%>
 

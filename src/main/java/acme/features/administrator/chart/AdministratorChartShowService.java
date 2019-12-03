@@ -19,14 +19,12 @@ public class AdministratorChartShowService implements AbstractShowService<Admini
 
 	@Override
 	public boolean authorise(final Request<Chart> request) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		return true;
 	}
 
 	@Override
 	public void unbind(final Request<Chart> request, final Chart entity, final Model model) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -36,7 +34,6 @@ public class AdministratorChartShowService implements AbstractShowService<Admini
 
 	@Override
 	public Chart findOne(final Request<Chart> request) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		Chart result = new Chart();
 
@@ -50,6 +47,7 @@ public class AdministratorChartShowService implements AbstractShowService<Admini
 		result.setRatioRejectedApplications(this.repository.findRatioRejectedApplications());
 		result.setRatioDraftJobs(this.repository.findRatioDraftJob());
 		result.setRatioPublishedJobs(this.repository.findRatioPublishedJob());
+
 		return result;
 	}
 

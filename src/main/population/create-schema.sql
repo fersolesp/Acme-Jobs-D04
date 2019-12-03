@@ -11,7 +11,7 @@
         `version` integer not null,
         `moment` datetime(6),
         `more_info` varchar(255),
-        `text` varchar(255),
+        `text` varchar(1024),
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -40,7 +40,7 @@
     create table `audit_record` (
        `id` integer not null,
         `version` integer not null,
-        `body` varchar(255),
+        `body` varchar(1024),
         `moment` datetime(6),
         `status` integer,
         `title` varchar(255),
@@ -90,7 +90,7 @@
         `bronze_reward_amount` double precision,
         `bronze_reward_currency` varchar(255),
         `deadline` datetime(6),
-        `description` varchar(255),
+        `description` varchar(1024),
         `gold_goal` varchar(255),
         `gold_reward_amount` double precision,
         `gold_reward_currency` varchar(255),
@@ -117,7 +117,7 @@
         `version` integer not null,
         `ceo` varchar(255),
         `company_name` varchar(255),
-        `description` varchar(255),
+        `description` varchar(1024),
         `email` varchar(255),
         `incorporated` bit not null,
         `phone` varchar(255),
@@ -156,7 +156,7 @@
     create table `descriptor` (
        `id` integer not null,
         `version` integer not null,
-        `description` varchar(255),
+        `description` varchar(1024),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -164,7 +164,7 @@
        `id` integer not null,
         `version` integer not null,
         `amount_time` integer,
-        `description` varchar(255),
+        `description` varchar(1024),
         `title` varchar(255),
         `descriptor_id` integer not null,
         primary key (`id`)
@@ -207,7 +207,7 @@
     create table `message` (
        `id` integer not null,
         `version` integer not null,
-        `body` varchar(255),
+        `body` varchar(1024),
         `moment` datetime(6),
         `tags` varchar(255),
         `title` varchar(255),
@@ -239,7 +239,7 @@
        `id` integer not null,
         `version` integer not null,
         `deadline` datetime(6),
-        `description` varchar(255),
+        `description` varchar(1024),
         `max_reward_amount` double precision,
         `max_reward_currency` varchar(255),
         `min_reward_amount` double precision,
@@ -275,7 +275,7 @@
         `moment` datetime(6),
         `reward_amount` double precision,
         `reward_currency` varchar(255),
-        `text` varchar(255),
+        `text` varchar(1024),
         `ticker` varchar(255),
         `title` varchar(255),
         primary key (`id`)
@@ -286,7 +286,7 @@
         `version` integer not null,
         `author` varchar(255),
         `moment` datetime(6),
-        `text` varchar(255),
+        `text` varchar(1024),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -338,11 +338,13 @@ create index IDXnhikaa2dj3la6o2o7e9vo01y0 on `announcement` (`moment`);
 
     alter table `application` 
        add constraint UK_rf84q38qr35ymh5nn0dcxfdue unique (`reference_number`);
+create index IDXof878cqun8l1ynh0ao94bw3au on `audit_record` (`status`);
 create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
 create index IDX9pkce3d1y6w47wadap5s5xptc on `company_record` (`stars`);
 create index IDX2psiob2l625wbcjcq6rac7jxd on `company_record` (`sector`);
 create index IDX36h1dt0en369n8juiobgqd99n on `investor_records` (`stars`);
 create index IDXio7n08eb64cro3eomn61pxoev on `investor_records` (`work_sector`);
+create index IDXal59yunywnkwi09ps7jxpr18c on `job` (`deadline`, `status`);
 
     alter table `job` 
        add constraint UK_qpodqtu8nvqkof3olnqnqcv2l unique (`descriptor_id`);

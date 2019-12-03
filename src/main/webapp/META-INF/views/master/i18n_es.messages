@@ -121,8 +121,8 @@ master.menu.sponsor.non-commercial-banner.list= Listar mis "Banners" No Comercia
 
 # master.menu.auditor ########################################################
 master.menu.auditor= Auditor
-master.menu.auditor.job.list= Trabajos los cuáles he escrito un Registro de Auditoría
-master.menu.auditor.job.listnot= Trabajos los cuáles NO he escrito un Registro de Auditoría
+master.menu.auditor.job.list= Trabajos de mis Registros de Auditoría
+master.menu.auditor.job.listnot= Trabajos fuera de mis Registros de Auditoría
 
 # master.menu.user-account ####################################################
 
