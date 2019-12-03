@@ -26,7 +26,8 @@ public class AuditorAuditRecordListService implements AbstractListService<Audito
 	@Override
 	public boolean authorise(final Request<AuditRecord> request) {
 		assert request != null;
-		return true;
+		int jobId = request.getModel().getInteger("id");
+		return this.repository.findIsJobPublished(jobId) > 0;
 	}
 
 	@Override

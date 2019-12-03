@@ -8,3 +8,6 @@
 	<acme:list-column code="auditor.job.list.label.deadline" path="deadline" width="10%"/>
 	<acme:list-column code="auditor.job.list.label.title" path="title" width="80%"/>
 </acme:list>
+<acme:form>
+	<acme:form-return code="auditor.job.form.button.return"/>
+</acme:form>

@@ -21,4 +21,7 @@ public interface AuditorAuditRecordRepository extends AbstractRepository {
 	@Query("select count(a) from AuditRecord a where a.id=?1 and (a.status=1 or a.auditor.id=?2)")
 	int findPublishedOrOwnAuditRecord(int idAuditRecord, int idAuditor);
 
+	@Query("select j.status from Job j where j.id=?1")
+	int findIsJobPublished(int jobId);
+
 }
