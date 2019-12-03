@@ -28,12 +28,12 @@ public class AuthenticatedAuditRecordShowService implements AbstractShowService<
 		assert request != null;
 
 		int auditRecordId = request.getModel().getInteger("id");
-		Job job = this.repository.findJobByAuditRecordId(auditRecordId);
-
+		AuditRecord auditRecord = this.repository.findOneAuditRecordById(auditRecordId);
+		Job job = auditRecord.getJob();
 		Calendar calendar = new GregorianCalendar();
 		Date minimumDeadLine = calendar.getTime();
 
-		return job.getStatus() == Status.PUBLISHED && job.getDeadline().after(minimumDeadLine);
+		return job.getStatus() == Status.PUBLISHED && job.getDeadline().after(minimumDeadLine) && auditRecord.getStatus() == Status.PUBLISHED;
 	}
 
 	@Override
