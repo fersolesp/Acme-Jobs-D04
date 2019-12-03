@@ -11,5 +11,6 @@ worker.application.form.label.skills = Habilidades:
 worker.application.form.label.qualifications = Cualificaciones:
 
 worker.application.form.button.return = Volver
+worker.application.list.button.return = Volver
 
 worker.application.form.label.jobOf = Enlace al Trabajo correspondiente

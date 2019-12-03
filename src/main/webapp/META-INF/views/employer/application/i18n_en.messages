@@ -11,5 +11,6 @@ employer.application.form.label.skills = Skills:
 employer.application.form.label.qualifications = Qualifications:
 
 employer.application.form.button.return = Return
+employer.application.list.button.return = Return
 
 employer.application.form.label.jobOf = Link to the corresponding Job
