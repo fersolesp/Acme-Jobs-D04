@@ -121,8 +121,8 @@ master.menu.sponsor.non-commercial-banner.list= List my Non Commercial Banners
 
 # master.menu.auditor ########################################################
 master.menu.auditor= Auditor
-master.menu.auditor.job.list= List Jobs which i written a Audit Record
-master.menu.auditor.job.listnot= List Jobs which i didn't written a Audit Record
+master.menu.auditor.job.list= List Jobs which i have written a Audit Record
+master.menu.auditor.job.listnot= List Jobs which i haven't written a Audit Record
 
 # master.menu.user-account ####################################################
 
