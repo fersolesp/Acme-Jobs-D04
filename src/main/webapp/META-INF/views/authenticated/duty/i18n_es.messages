@@ -2,8 +2,8 @@ authenticated.duty.list.label.title= Título
 authenticated.duty.list.label.description= Descriptión
 
 
-authenticated.job.form.label.title= Título
-authenticated.job.form.label.description= Descripción:
-authenticated.job.form.label.timeAmount= Cantidad de tiempo(%):
+authenticated.duty.form.label.title= Título
+authenticated.duty.form.label.description= Descripción:
+authenticated.duty.form.label.timeAmount= Cantidad de tiempo(%):
 
 authenticated.duty.form.button.return= Volver

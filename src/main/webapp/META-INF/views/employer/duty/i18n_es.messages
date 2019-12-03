@@ -2,8 +2,8 @@ employer.duty.list.label.title= Título
 employer.duty.list.label.description= Descriptión
 
 
-employer.job.form.label.title= Título
-employer.job.form.label.description= Descripción:
-employer.job.form.label.timeAmount= Cantidad de tiempo(%):
+employer.duty.form.label.title= Título
+employer.duty.form.label.description= Descripción:
+employer.duty.form.label.timeAmount= Cantidad de tiempo(%):
 
 employer.duty.form.button.return= Volver
