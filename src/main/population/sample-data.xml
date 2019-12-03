@@ -703,7 +703,7 @@
     <bean name="auditRecord2" class="acme.entities.auditRecords.AuditRecord">
     	<property name="title" value="Audit Record 2"/>
     	<property name="moment" value="2018/12/18 23:59"/>
-    	<property name="status" value="PUBLISHED"/>
+    	<property name="status" value="DRAFT"/>
     	<property name="body" value="An extense block of text describing the audit record 2"/>
     	<property name="job" ref="job2"/>
     	<property name="auditor" ref="auditor1Auditor"/>
@@ -721,7 +721,7 @@
     <bean name="auditRecord4" class="acme.entities.auditRecords.AuditRecord">
     	<property name="title" value="Audit Record 4"/>
     	<property name="moment" value="2018/12/27 23:59"/>
-    	<property name="status" value="PUBLISHED"/>
+    	<property name="status" value="DRAFT"/>
     	<property name="body" value="An extense block of text describing the audit record 4"/>
     	<property name="job" ref="job4"/>
     	<property name="auditor" ref="auditor2Auditor"/>
