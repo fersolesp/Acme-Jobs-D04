@@ -133,7 +133,7 @@
 			<acme:menu-suboption code="master.menu.sponsor.non-commercial-banner.list" action="/sponsor/non-commercial-banner/list-mine"/>
 		</acme:menu-option>
 		<acme:menu-option code="master.menu.auditor" access="hasRole('Auditor')">
-			<acme:menu-suboption code="master.menu.auditor.job.list" action="/auditor/job/list"/>
+			<acme:menu-suboption code="master.menu.auditor.job.list" action="/auditor/job/list-mine"/>
 			<acme:menu-suboption code="master.menu.auditor.job.listnot" action="/auditor/job/list-not"/>
 		</acme:menu-option>
 	</acme:menu-left>

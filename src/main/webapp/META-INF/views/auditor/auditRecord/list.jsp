@@ -8,3 +8,6 @@
 	<acme:list-column code="auditor.auditRecord.list.label.auditor" path="auditor.userAccount.username" width="20%"/>
 	<acme:list-column code="auditor.auditRecord.list.label.moment" path="moment" width="20%"/>
 </acme:list>
+<acme:form>
+	<acme:form-return code="auditor.auditRecord.form.button.return"/>
+</acme:form>
