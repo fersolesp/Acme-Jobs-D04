@@ -1,0 +1,10 @@
+worker.duty.list.label.title= Título
+worker.duty.list.label.description= Descriptión
+
+
+worker.job.form.label.title= Título
+worker.job.form.label.description= Descripción:
+worker.job.form.label.timeAmount= Cantidad de tiempo(%):
+
+worker.duty.form.button.return= Volver
+worker.duty.list.button.return= Volver
