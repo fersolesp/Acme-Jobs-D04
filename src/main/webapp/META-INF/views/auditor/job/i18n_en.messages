@@ -9,6 +9,6 @@ auditor.job.form.label.salary= Salary:
 auditor.job.form.label.moreInfo= More Information:
 auditor.job.form.label.status= Status:
 
-auditor.job.form.button.auditRecord= Attached Audit Records
-auditor.job.form.button.duty= Attached Duties
+auditor.job.form.button.auditRecord= Audit Records
+auditor.job.form.button.duty= Duties
 auditor.job.form.button.return= Return

@@ -36,6 +36,7 @@ public class Application extends DomainEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				creationMoment;
 
+	@NotNull
 	private ApplicationStatus	status;
 
 	@NotBlank

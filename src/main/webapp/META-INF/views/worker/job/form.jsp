@@ -10,18 +10,19 @@
 	<acme:form-moment code="worker.job.form.label.deadline" path="deadline"/>
 	<acme:form-money code="worker.job.form.label.salary" path="salary"/>
 	<acme:form-url code="worker.job.form.label.moreInfo" path="moreInfo"/>
+	
 	<acme:form-panel code="worker.job.form.panel.descriptor">
 		<acme:form-textbox code="worker.job.form.label.description" path="descriptor.description"/>
-		
-		<button type="button" onclick="javascript: clearReturnUrl(); redirect('/worker/duty/list-mine?id=${descriptor.id}')" 
-		class="btn btn-default">
-		<acme:message code="worker.job.form.label.descriptorMessage"/>
-		</button>
 	</acme:form-panel>
+	
+	<button type="button" onclick="javascript: clearReturnUrl(); redirect('/worker/duty/list-mine?id=${descriptor.id}')" 
+	class="btn btn-default">
+		<acme:message code="worker.job.form.label.descriptorMessage"/>
+	</button>
 	
 	<button type="button" onclick="javascript: clearReturnUrl(); redirect('/worker/audit-record/list?id=${id}')" 
 		class="btn btn-default">
-		<acme:message code="worker.job.form.label.descriptorMessage"/>
+		<acme:message code="worker.job.form.label.AuditRecordMessage"/>
 	</button>
 	
 	<acme:form-return code="worker.job.form.button.return"/>

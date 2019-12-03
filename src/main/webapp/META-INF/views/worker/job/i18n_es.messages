@@ -10,3 +10,4 @@ worker.job.form.button.return= Volver
 worker.job.form.panel.descriptor= Descriptor
 worker.job.form.label.description= Descripción:
 worker.job.form.label.descriptorMessage= Obligaciones
+worker.job.form.label.AuditRecordMessage=Registros de Auditoría

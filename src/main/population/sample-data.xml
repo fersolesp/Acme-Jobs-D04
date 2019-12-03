@@ -638,8 +638,8 @@
     	<property name="enabled" value="true"/>
     	<property name="identity">
     		<bean class="acme.datatypes.UserIdentity">
-    			<property name="name" value="Auditor"/>
-    			<property name="surname" value="First"/>
+    			<property name="name" value="Pedro"/>
+    			<property name="surname" value="Olivero"/>
     			<property name="email" value="auditor1@acme.com"/>
     		</bean>
     	</property>
@@ -656,8 +656,8 @@
     	<property name="enabled" value="true"/>
     	<property name="identity">
     		<bean class="acme.datatypes.UserIdentity">
-    			<property name="name" value="Auditor"/>
-    			<property name="surname" value="Second"/>
+    			<property name="name" value="Juan"/>
+    			<property name="surname" value="García"/>
     			<property name="email" value="auditor2@acme.com"/>
     		</bean>
     	</property>
@@ -705,7 +705,7 @@
     	<property name="moment" value="2018/12/18 23:59"/>
     	<property name="status" value="DRAFT"/>
     	<property name="body" value="An extense block of text describing the audit record 2"/>
-    	<property name="job" ref="job2"/>
+    	<property name="job" ref="job3"/>
     	<property name="auditor" ref="auditor1Auditor"/>
     </bean>
     
@@ -723,7 +723,7 @@
     	<property name="moment" value="2018/12/27 23:59"/>
     	<property name="status" value="DRAFT"/>
     	<property name="body" value="An extense block of text describing the audit record 4"/>
-    	<property name="job" ref="job4"/>
+    	<property name="job" ref="job1"/>
     	<property name="auditor" ref="auditor2Auditor"/>
     </bean>
     
